@@ -1,0 +1,187 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>grain.</title>
+<style>
+body, html {
+  height: 100%;
+  margin: 0;
+  font: 400 15px/1.8 "Lato", sans-serif;
+  color: #777;
+}
+
+.bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4 {
+  position: relative;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+.bgimg-1 {
+  background-image: url("img/LeatherTexturewithlogo.jpg");
+  min-height: 100%;
+}
+
+.bgimg-2 {
+  background-image: url("img/wallet.jpg");
+  min-height: 400px;
+}
+
+.bgimg-3 {
+  background-image: url("img/workspace.jpg");
+  min-height: 400px;
+}
+
+.bgimg-4 {
+  background-image: url("img/mississippi.jpg");
+  min-height: 400px;
+}
+
+.caption {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+}
+
+.caption span.border {
+  background-color: #111;
+  color: #fff;
+  padding: 18px;
+  font-size: 25px;
+  letter-spacing: 10px;
+}
+
+.footer {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    color: #000;
+    bottom: 10%;
+    opacity: .5;
+}
+
+.footer span.border {
+  background-color: #111;
+  color: #fff;
+  padding: 18px;
+  font-size: 25px;
+  letter-spacing: 10px;
+}
+
+h3 {
+  font: 20px "Lato", sans-serif;
+  color: #111;
+}
+
+.left, .right {
+    background: #000 url('http://lorempixel.com/300/100');
+    position: relative;
+    height: 100px;
+    width: 250px;
+    float: left;
+}
+
+.left:after {
+    content: '';
+    line-height: 0;
+    font-size: 0;
+    width: 0;
+    height: 0;
+    border-top: 50px solid transparent;
+    border-bottom: 100px solid #fff;
+    border-left: 30px solid transparent;
+    border-right: 0 solid #fff;
+    position: absolute;
+    top: -50px;
+    right: 0;
+}
+
+.right {
+    background: #000 url('http://lorempixel.com/200/100');
+    width: 150px;
+}
+
+.right:before {
+    content: '';
+    line-height: 0;
+    font-size: 0;
+    width: 0;
+    height: 0;
+    border-top: 100px solid #fff;
+    border-bottom: 50px solid transparent;
+    border-left: 0px solid transparent;
+    border-right: 30px solid transparent;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1024px) {
+    .bgimg-1, .bgimg-2, .bgimg-3 {
+        background-attachment: scroll;
+    }
+}
+</style>
+</head>
+<body>
+
+<div class="bgimg-1">
+</div>
+
+<div style="color: #777;background-color:white;text-align:center;padding:50px 80px;text-align: justify;">
+  <h3 style="text-align:center;">grain.</h3>
+  <p>It all starts with grain. What begins with a single seed soon spreads into a large gathering and that's how we feel about our work at Grain Leather Co. Each of our creations starts as a small idea and with some hard work ends up putting a smile on the face of every person reaping what we've sown. The fields are ripe for harvest. </p>
+</div>
+
+<div class="bgimg-2">
+  <div class="caption">
+    <span class="border" style="background-color:transparent;font-size:25px;color: #f7f7f7;">QUALITY GOODS</span>
+  </div>
+</div>
+
+<div style="position:relative;">
+  <div style="color:#ddd;background-color:#282E34;text-align:center;padding:50px 80px;text-align: justify;">
+    <p>Whether it's one of our Mississippi keychains or large size catch alls, each item we produce is made with the finest full-grain leather and built to last for generations.</p>
+  </div>
+</div>
+
+<div class="bgimg-3">
+  <div class="caption">
+    <span class="border" style="background-color:transparent;font-size:25px;color: #f7f7f7;">HAND CRAFTED</span>
+  </div>
+</div>
+
+<div style="position:relative;">
+  <div style="color:#ddd;background-color:#282E34;text-align:center;padding:50px 80px;text-align: justify;">
+    <p>From sketching up an idea to sewing the last stitch, each step in our process is completed by hand.</p>
+  </div>
+</div>
+
+<div class="bgimg-4">
+  <div class="caption">
+    <span class="border" style="background-color:transparent;font-size:25px;color: #f7f7f7;">MISSISSIPPI MADE</span>
+  </div>
+</div>
+
+<div style="position:relative;">
+  <div style="color:#ddd;background-color:#282E34;text-align:center;padding:50px 80px;text-align: justify;">
+    <p>Born in Texas, bred in Mississippi. Grain Leather Co is proud to be located in Hattiesburg, MS.</p>
+  </div>
+</div>
+
+<div class="bgimg-1">
+  <div class="footer">
+    <span class="border">John 4:35</span>
+  </div>
+</div>
+
+</body>
+</html>

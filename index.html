@@ -1,0 +1,53 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>grain.</title>
+    <link rel="stylesheet" type="text/css" href="css/site.css" />
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+      }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="scripts/bootstrap.js"></script>
+    <script src="scripts/parallax.min.js"></script>
+  </head>
+  
+  <body>
+
+    <div id="leatherTexture" class="parallax-window" data-parallax="scroll" data-image-src="img/LeatherTexturewithlogo.jpg" style="color: white;" data-natural-width="3465" data-natural-height:="1602">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="parallax-window" data-parallax="scroll" data-image-src="img/mississippi.jpg"></div>
+    <div class="parallax-window" data-parallax="scroll" data-image-src="img/wallet.jpg"></div>
+    <div class="parallax-window" data-parallax="scroll" data-image-src="img/workspace.jpg"></div>
+    <div class="parallax-window" data-parallax="scroll" data-image-src="img/wristbands.jpg"></div>
+  </body>
+
+</html>
+
+<script>
+    $(document).ready(function() {
+
+        $('.parallax-window').parallax({
+            naturalWidth: 600,
+            naturalHeight: 800
+        });
+
+        $("#leatherTexture").css("min-height", window.innerHeight);
+    });
+</script>
